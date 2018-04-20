@@ -1,0 +1,214 @@
+
+* {
+  box-sizing: border-box;
+}
+
+/*-- Global Settings --*/
+
+html {
+  font-size: 18px;
+  font-family: helvetica;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h1, h2 {
+  padding-bottom: 0.25rem;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+/*-- Header --*/
+
+.header {
+  background-color: black;
+  padding: 0.66rem 0 0.66rem 1rem;
+  width: 100%;
+  color: white;
+}
+
+.header .logo {
+  display: flex;
+  align-items: center;
+  padding-right: 1rem;
+}
+
+.logo1 {
+  height: 1.5rem;
+}
+
+.logo-text {
+  padding-left: 1rem;
+}
+
+/*-- Top Container --*/
+
+.main {
+  background-image: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/moto.jpeg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 25rem;
+}
+
+.news {
+  position: relative;
+  top: 9rem;
+  width: 20rem;
+  padding: 2rem 3rem;
+  font-weight: bold;
+  background-color: black;
+  color: white;
+}
+
+/*-- Nav Section --*/
+
+.options {
+  background-color: firebrick;
+  color: white;
+  padding: 0.75rem 0;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.tablet {
+  display: none;
+}
+
+@media only screen and (max-width: 1024px) {
+  nav span {
+    display: none;
+  }
+  nav {
+    justify-content: center;
+  }
+
+  .tablet {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  .main {
+    height: 15rem;
+  }
+  .news {
+    width: 100%;
+    padding: 1rem 2rem;
+    height: 5rem;
+  }
+
+  h2 {
+    font-size: 0.77rem;
+  }
+  h1 {
+    font-size: 1rem;
+  }
+}
+
+/*-- Featured Items --*/
+
+.featured {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.items {
+  width: 30%;
+}
+
+.product {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 13rem;
+  padding: 2rem 0;
+  border: 4px solid black;
+}
+
+.product img {
+  max-width: 8rem;
+}
+
+.description {
+  color: white;
+  display: block;
+  background-color: black;
+  padding: 0.5rem 0rem;
+  text-align: center;
+}
+
+@media only screen and (max-width: 1024px) {
+  .glasses {
+    display: none;
+  }
+  .items {
+    width: 47%;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  .watch {
+    display: none;
+  }
+  .pen {
+    width: 90%;
+    justify-content: center;
+    margin: 0.5rem auto;
+  }
+}
+
+/*-- Location and Hours--*/
+
+.location {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3rem;
+}
+
+.business {
+width: 35%;
+}
+
+.info {
+  display: block;
+  padding: 1rem 2rem;
+  background-color: black;
+  color:white;
+}
+
+@media only screen and (max-width: 470px) {
+  .location {
+    flex-wrap: wrap;
+  }
+  .business {
+    width: 90%;
+    margin: 0.5rem auto;
+  }
+}
+
+/*-- Footer --*/
+
+footer {
+  color: white;
+  background-color: black;
+  padding: 5rem 0;
+  text-align: left;
+  align-content: center;
+  margin-top: 4rem;
+}
+
+@media only screen and (max-width: 470px) {
+  .footer-mobile {
+    text-align: center;
+  }
+}
